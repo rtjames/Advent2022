@@ -51,6 +51,15 @@ when 1
         # 209914
         answer = sum_max_calorie_counts(input, 3)
     end
+when 2
+    require_relative 'rock_paper_scissors.rb'
+    if part == 1
+        # 12645
+        answer = calculate_match_scores(input)
+    elsif part == 2
+        # 11756
+        answer = calculate_match_scores(input, :two)
+    end
 else
     puts "Day #{day} Part #{part} has not been added"
 end
